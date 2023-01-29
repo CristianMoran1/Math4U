@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical"
+    android:layout_gravity = "center"
+    android:background="@drawable/mathbacks"
+    tools:context=".PlayActivity">
+
+    <TextView
+        android:text="Kid's Math"
+        android:textAlignment="center"
+        android:textColor="F1532B"
+        android:textSize="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <LinearLayout
+        android:orientation = "horizontal"
+        android:layout_gravity = "center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/multi"
+        android:src="@drawable/multiply"
+        android:layout_margin="15dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/div"
+        android:src="@drawable/division"
+        android:layout_margin="15dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+    </ImageView>
+
+    <LinearLayout
+        android:orientation = "horizontal"
+        android:layout_gravity = "center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/add"
+        android:src="@drawable/addtion"
+        android:layout_margin="15dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/sub"
+        android:src="@drawable/subtract"
+        android:layout_margin="15dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+    </ImageView>
+
+
+
+
+</LinearLayout>
