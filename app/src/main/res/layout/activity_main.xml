@@ -11,7 +11,7 @@
         android:layout_width="140dp"
         android:layout_height="105dp"
         android:layout_marginStart="28dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="36dp"
         android:onClick="optionSelect"
         android:tag="0"
         android:text="button"
@@ -80,7 +80,7 @@
         android:background="#4CAF50"
         android:padding="10dp"
         android:text="0/0"
-        android:textColor="#F4F0F0"
+        android:textColor="#0D47A1"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"></TextView>
@@ -108,7 +108,7 @@
         android:background="#FF9800"
         android:padding="10dp"
         android:text="30s"
-        android:textColor="#FDFCFC"
+        android:textColor="#795548"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
