@@ -11,7 +11,6 @@
         android:layout_width="140dp"
         android:layout_height="105dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="46dp"
         android:layout_marginBottom="29dp"
         android:onClick="optionSelect"
         android:tag="0"
@@ -21,8 +20,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/QuestionTextText"></Button>
+        app:layout_constraintStart_toStartOf="parent"></Button>
 
     <Button
         android:id="@+id/button1"
@@ -38,91 +36,95 @@
         app:backgroundTint="#DF165A"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"></Button>
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QuestionTextText"
+        app:layout_constraintVertical_bias="1.0"></Button>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="140dp"
         android:layout_height="105dp"
         android:layout_marginStart="28dp"
-        android:layout_marginBottom="144dp"
+        android:layout_marginBottom="136dp"
         android:onClick="optionSelect"
         android:tag="2"
         android:text="button"
         android:textSize="24sp"
         app:backgroundTint="#0E8C80"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"></Button>
 
     <Button
         android:id="@+id/button3"
         android:layout_width="140dp"
         android:layout_height="105dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="16dp"
         android:onClick="optionSelect"
         android:tag="3"
         android:text="button"
-        android:textSize="34sp"
+        android:textSize="24sp"
         app:backgroundTint="#3F51B5"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="469dp"></Button>
+        app:layout_constraintBottom_toTopOf="@+id/AlertTextView"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
         android:id="@+id/ScoreTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="28dp"
         android:background="#4CAF50"
         android:padding="10dp"
         android:text="0/0"
-        android:textSize="30sp"
         android:textColor="#F4F0F0"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </TextView>
+        app:layout_constraintTop_toTopOf="parent"></TextView>
 
     <TextView
         android:id="@+id/QuestionTextText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_constraintBottom_toBottomOf="parent"
-        android:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="188dp"
-        android:constraint_Horizontal_bias="0.486"
+        android:layout_marginBottom="64dp"
         android:padding="20dp"
         android:text="29 + 12"
         android:textColor="#555555"
         android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        app:layout_constraintBottom_toTopOf="@+id/button0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/TimeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
         android:background="#FF9800"
         android:padding="10dp"
         android:text="30s"
         android:textColor="#FDFCFC"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/AlertTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_constraintEnd_toEndOf="parent"
-        android:constraint_Horizontal_bias="0.5"
+        android:layout_marginBottom="32dp"
         android:padding="20dp"
         android:text="Let's do it!"
         android:textColor="#555555"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="596dp"></TextView>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
